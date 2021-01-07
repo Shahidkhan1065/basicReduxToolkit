@@ -5,6 +5,7 @@ const Step2 = lazy(() => import('./Step2'));
 const Step3 = lazy(() => import('./Step3'));
 const Step4 = lazy(() => import('./Step4'));
 const Result = lazy(() => import('./Result'));
+const Posts = lazy(() => import('./posts/Posts'));
 // const Profile = lazy(() => import('./Profile'));
 // const About = lazy(() => import('./About'));
 
@@ -18,6 +19,7 @@ function App() {
           <Route path='/step3' component={Step3} />
           <Route path='/step4' component={Step4} />
           <Route path='/result' component={Result} />
+          <Route path='/posts' component={Posts} />
         </Switch>
       </Suspense>
     </>

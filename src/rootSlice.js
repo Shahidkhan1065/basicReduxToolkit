@@ -24,7 +24,7 @@ const rootSlice = createSlice({
   },
 });
 
-export const reducer = rootSlice.reducer;
+export const wizardReducer = rootSlice.reducer;
 export const {
   chooseBase,
   chooseCheese,

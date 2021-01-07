@@ -1,6 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { reducer } from './rootSlice';
+import { wizardReducer } from './rootSlice';
+import postsSlice from './posts/postsSlice';
 
 export const store = configureStore({
-  reducer,
+  reducer: {
+    wizardReducer: wizardReducer,
+    posts: postsSlice,
+  },
 });
